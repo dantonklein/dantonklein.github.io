@@ -1,0 +1,69 @@
+{
+  "$ref": "#/definitions/hackathons",
+  "definitions": {
+    "hackathons": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "startDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "endDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "logo": {
+          "type": "string"
+        },
+        "sourceLink": {
+          "type": "string",
+          "format": "uri"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "location",
+        "description",
+        "startDate"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
