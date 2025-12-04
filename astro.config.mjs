@@ -9,5 +9,7 @@ export default defineConfig({
   integrations: [mdx()],
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+  site: 'https://dantonklein.github.io',
+  base: '/dantonklein.github.io/',
 });
