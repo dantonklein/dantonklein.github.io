@@ -1,10 +1,10 @@
 ---
-title: "University of Technology"
-subtitle: "Bachelor of Science in Computer Science"
-logo: "https://api.dicebear.com/9.x/icons/svg?seed=Nolan"
-startDate: "2015-09-01"
-endDate: "2019-05-30"
-link: "https://university.edu"
+title: "University of Florida"
+subtitle: "Master of Science in Electrical and Computer Engineering"
+logo: "https://brandcenter.p01.wp.it.ufl.edu/wp-content/uploads/sites/57/2024/05/NEW-IMAGES_UF-Logo_University-Logo-768x789-1.png"
+startDate: "2023-08-01"
+endDate: "2025-05-01"
+link: "https://www.ufl.edu/"
 ---
 
-Focused on software engineering, algorithms, and data structures. Graduated with honors and participated in various coding competitions.
+Focused on FPGA Design, Computer Architecture, Hardware Security, and VLSI Design.

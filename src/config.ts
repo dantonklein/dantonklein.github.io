@@ -95,25 +95,20 @@ export interface SiteConfig {
  * Update these values to customize your portfolio
  */
 export const siteConfig: SiteConfig = {
-  name: "🌻 Bloomfolio",
-  title: "Astro Portfolio Template built with 🌼 DaisyUI",
+  name: "Danton Klein",
+  title: "Computer Engineer",
   description:
-    "A modern, responsive, and customizable portfolio template built with Astro and DaisyUI. Perfect for developers, designers, and creatives to showcase their work and skills.",
-  avatar: "../assets/bloomfolio.png",
-  location: "🇧🇷 Brazil",
-  email: "hello@example.com",
+    "University of Florida ECE Graduate seeking a career as an RTL Design Engineer",
+  avatar: "../assets/me.jpg",
+  location: "🇺🇸 US",
+  email: "dantonmklein@gmail.com",
   socialLinks: {
-    github: "https://github.com/lauroguedes",
-    linkedin: "https://linkedin.com/in/lauroguedes",
-    twitter: "https://twitter.com/leowg",
-    bluesky: "https://bsky.app/profile/lauroguedes.bsky.social",
-    instagram: "https://instagram.com/lauroguedes.dev",
-    youTube: "https://youtube.com/leowgweb",
-    codetips: "https://codetips.cloud/u/lauroguedes",
+    github: "https://github.com/dantonklein",
+    linkedin: "https://www.linkedin.com/in/danton-klein-211937213/",
   },
-  enableThemeSelector: true,
+  enableThemeSelector: false,
   extraLinks: {
-    enable: true,
+    enable: false,
     links: [
       {
         link: "/blog/guides/bloomfolio-complete-guide",
@@ -140,10 +135,10 @@ export const siteConfig: SiteConfig = {
   sections: {
     about: true,
     projects: true,
-    blog: true,
+    blog: false,
     work: true,
     education: true,
-    hackathons: true,
+    hackathons: false,
     contact: true,
   },
 };

@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-photo: "https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=Destiny&scale=90&backgroundColor=763900,9e5622,ecad80,f2d3b1,c0aede,b6e3f4"
+photo: "/nice.jpg"
 ---
 
-I'm a full-stack developer with a passion for creating beautiful, functional, and user-friendly web applications. With experience in **modern frameworks and technologies**, I love turning ideas into reality through code. When I'm not coding, you can find me **exploring new technologies**, contributing to open source, or enjoying a good cup of coffee.
+I'm an aspiring RTL design engineer with a Master's in Electrical and Computer Engineering from the University of Florida. I specialized in RTL design with an emphasis on development for FPGAs, with my coursework and projects tailored to it. My true passions in computer engineering are any topics related to computer architecture and accelerator design. When I'm not spending time learning and developing hardware you can find me going to the gym, exploring live music in Miami, or learning guitar.

@@ -1,10 +1,10 @@
 ---
-title: "Tech Corp"
-subtitle: "Senior Full Stack Developer"
-logo: "https://api.dicebear.com/9.x/shapes/svg?seed=Easton"
-startDate: "2021-06-01"
-endDate: "2024-01-01"
-link: "https://example.com"
+title: "Microsoft"
+subtitle: "Electrical Engineering Intern"
+logo: "https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_256px.png"
+startDate: "2024-05-01"
+endDate: "2024-08-01"
+link: "https://www.microsoft.com/en-us/"
 ---
 
-Led development of multiple high-impact web applications using React, Node.js, and PostgreSQL. Mentored junior developers and implemented best practices for code quality and testing.
+Tested and improved the shielding of the XBOX Wireless Headset to bring electrical emissions to FCC specification. Automated Excel data collection with VBA scripting, saving technicians on average 2 hours per week. Drafted new test procedures to enable future aeronautical-grade device testing

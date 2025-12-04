@@ -1,10 +1,10 @@
 ---
-title: "ABC Inc"
-subtitle: "Frontend Developer"
-logo: "https://api.dicebear.com/9.x/shapes/svg?seed=Amaya"
-startDate: "2019-01-15"
-endDate: "2021-05-30"
-link: "https://example.com"
+title: "UF SHREC Lab"
+subtitle: "Research Assistant"
+logo: "https://www.nsf-shrec.org/themes/custom/pitt_twentytwenty/images/nsf-shrec-logo.png"
+startDate: "2023-08-01"
+endDate: "2025-09-01"
+link: "https://www.nsf-shrec.org/"
 ---
 
-Built responsive web applications using Vue.js and modern CSS frameworks. Collaborated with designers to create pixel-perfect user interfaces.
+Implemented pipelined Notch filter on an FPGA in SystemVerilog to filter ambient noise from a lightning detection system, improving usable data efficiency by 40%. Developed C++ programs for characterizing performance and scalability of different accelerator architectures.

@@ -1,10 +1,10 @@
 ---
-title: "University of AI"
-subtitle: "Bachelor of Information Systems"
-logo: "https://api.dicebear.com/9.x/icons/svg?seed=Sophia"
-startDate: "2015-09-01"
-endDate: "2019-05-30"
-link: "https://university.edu"
+title: "University of Florida"
+subtitle: "Bachelor of Electrical Engineering"
+logo: "https://brandcenter.p01.wp.it.ufl.edu/wp-content/uploads/sites/57/2024/05/NEW-IMAGES_UF-Logo_University-Logo-768x789-1.png"
+startDate: "2020-08-01"
+endDate: "2024-05-01"
+link: "https://www.ufl.edu/"
 ---
 
-Focused on software engineering, algorithms, and data structures. Graduated with honors and participated in various coding competitions.
+Focused on digital design and embedded software engineering. Graduated with honors.
