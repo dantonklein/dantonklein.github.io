@@ -4,6 +4,7 @@ description: "Parameterized Direct Mapped, Fully Associative, and N-Way Associat
 image: "https://api.dicebear.com/9.x/glass/svg?seed=Jocelyn"
 startDate: "2025-12-01"
 skills: ["SystemVerilog", "Vivado", "Computer Architecture"]
+sourceLink: "https://github.com/dantonklein/Cache-Designs"
 ---
 
 ## About This Project

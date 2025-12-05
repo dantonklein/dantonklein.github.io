@@ -5,6 +5,7 @@ image: "https://raw.githubusercontent.com/dantonklein/RISC-V-CPU/refs/heads/mast
 startDate: "2025-06-01"
 endDate: "2025-10-01"
 skills: ["SystemVerilog", "RTL Design", "Computer Architecture", "Static Timing Analysis"]
+sourceLink: "https://github.com/dantonklein/RISC-V-CPU"
 ---
 
 ## Description
