@@ -1,0 +1,477 @@
+<!DOCTYPE html><html lang="en" data-astro-transition-scope="astro-smooz4hq-1"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Master Markdown syntax and MDX features in Bloomfolio. Learn how to create rich, formatted content with embedded media components."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.16.3"><title>Markdown &amp; MDX Guide</title><!-- View Transitions --><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.QW52Ox2j.js"></script><!-- Open Graph / Social Media --><meta property="og:title" content="Markdown &#38; MDX Guide"><meta property="og:description" content="Master Markdown syntax and MDX features in Bloomfolio. Learn how to create rich, formatted content with embedded media components."><meta property="og:type" content="website"><meta property="og:url" content="https://dantonklein.github.io"><meta property="og:image" content="https://dantonklein.github.io/images/og_home.png"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Markdown &#38; MDX Guide"><meta name="twitter:description" content="Master Markdown syntax and MDX features in Bloomfolio. Learn how to create rich, formatted content with embedded media components."><meta name="twitter:image" content="https://dantonklein.github.io/images/og_home.png"><link rel="stylesheet" href="/_astro/_slug_.D-f8p6xj.css"><style>[data-astro-transition-scope="astro-smooz4hq-1"] { view-transition-name: astro-smooz4hq-1; }@layer astro { ::view-transition-old(astro-smooz4hq-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-name: blurFadeOut; }::view-transition-new(astro-smooz4hq-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+	animation-name: blurFadeIn; }[data-astro-transition=back]::view-transition-old(astro-smooz4hq-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-name: blurFadeOut; }[data-astro-transition=back]::view-transition-new(astro-smooz4hq-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+	animation-name: blurFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-smooz4hq-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-smooz4hq-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-name: blurFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-smooz4hq-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-smooz4hq-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+	animation-name: blurFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-smooz4hq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-smooz4hq-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-name: blurFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-smooz4hq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-smooz4hq-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+	animation-name: blurFadeIn; }</style></head> <body class="min-h-screen"> <!-- Theme Controls - Fixed Position --> <div class="fixed top-4 right-4 z-50"> <label class="swap swap-rotate"> <input type="checkbox" class="theme-controller" value="dark"> <!-- sun icon --> <svg class="swap-off fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"></path> </svg> <!-- moon icon --> <svg class="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"></path> </svg> </label> <script>
+  // Set theme on page load based on localStorage or system preference
+  function setTheme() {
+    const theme = localStorage.getItem('theme') ||
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+    const toggle = document.querySelector('.theme-controller');
+    if (toggle) {
+      toggle.checked = theme === 'dark';
+    }
+  }
+
+  // Update theme when toggle is clicked
+  document.addEventListener('change', (e) => {
+    const target = e.target;
+    if (target.classList.contains('theme-controller')) {
+      const theme = target.checked ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+  });
+
+  // Run on page load
+  setTheme();
+
+  // Run after view transitions
+  document.addEventListener('astro:after-swap', setTheme);
+</script> </div>  <article class="max-w-4xl mx-auto px-4 py-20"> <!-- Back button --> <div class="mb-8"> <a href="/blog" class="btn btn-ghost btn-sm"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="m15 18-6-6 6-6"></path> </svg>
+Back to Blog
+</a> </div> <!-- Featured Image --> <figure class="mb-8 rounded-2xl overflow-hidden"> <img src="/_astro/placeholder-blog.Eq9gDERK_1q3pa8.svg" alt="Markdown &#38; MDX Guide" loading="lazy" decoding="async" fetchpriority="auto" width="1200" height="630" class="w-full aspect-video object-cover"> </figure> <!-- Post Header --> <header class="mb-8"> <h1 class="text-5xl font-bold mb-4">Markdown &amp; MDX Guide</h1> <p class="text-xl text-base-content/70 mb-4">Master Markdown syntax and MDX features in Bloomfolio. Learn how to create rich, formatted content with embedded media components.</p> <div class="flex flex-wrap items-center gap-4 text-sm text-base-content/60"> <time datetime="2025-11-03T00:00:00.000Z"> November 2, 2025 </time> <span>•</span> <span>12 min read</span>  </div> <div class="flex flex-wrap gap-2 mt-4"> <span class="badge badge-sm badge-soft badge-accent">Guide</span><span class="badge badge-sm badge-soft badge-accent">Markdown</span><span class="badge badge-sm badge-soft badge-accent">MDX</span><span class="badge badge-sm badge-soft badge-accent">Writing</span> </div> </header> <!-- Divider --> <div class="divider"></div> <!-- Post Content --> <div class="max-w-none leading-7
+      [&_h1]:text-4xl [&_h1]:font-bold [&_h1]:mt-8 [&_h1]:mb-4
+      [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:mt-8 [&_h2]:mb-4
+      [&_h3]:text-2xl [&_h3]:font-bold [&_h3]:mt-8 [&_h3]:mb-4
+      [&_h4]:text-xl [&_h4]:font-bold [&_h4]:mt-8 [&_h4]:mb-4
+      [&_h5]:text-lg [&_h5]:font-bold [&_h5]:mt-8 [&_h5]:mb-4
+      [&_h6]:text-base [&_h6]:font-bold [&_h6]:mt-8 [&_h6]:mb-4
+      [&_p]:mb-4
+      [&_a]:underline [&_a]:link
+      [&_ul]:mb-4 [&_ul]:ml-6 [&_ul]:list-disc [&_ul]:list-outside
+      [&_ol]:mb-4 [&_ol]:ml-6 [&_ol]:list-decimal [&_ol]:list-outside
+      [&_li]:mb-2
+      [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-sm [&_code]:font-mono [&_code]:bg-base-200
+      [&_pre]:p-4 [&_pre]:rounded-lg [&_pre]:overflow-x-auto [&_pre]:mb-4 [&_pre]:bg-base-200
+      [&_pre_code]:bg-transparent [&_pre_code]:p-0
+      [&_blockquote]:border-l-4 [&_blockquote]:border-base-300 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:my-4
+      [&_img]:rounded-lg [&_img]:my-6">  <h2 id="what-is-markdown">What is Markdown?</h2>
+<p>Markdown is a lightweight markup language that lets you format text using simple, readable syntax. It’s widely used for documentation, blog posts, and README files because it’s easy to write and read.</p>
+<h2 id="what-is-mdx">What is MDX?</h2>
+<p>MDX is an extension of Markdown that allows you to use JSX (JavaScript XML) within your markdown files. This means you can import and use React/Astro components directly in your content, creating interactive and rich media experiences.</p>
+<h2 id="markdown-syntax-guide">Markdown Syntax Guide</h2>
+<h3 id="headings">Headings</h3>
+<p>Create headings using <code>#</code> symbols. More <code>#</code> symbols mean smaller headings.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># Heading 1</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Heading 2</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">### Heading 3</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">#### Heading 4</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">##### Heading 5</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">###### Heading 6</span></span></code></pre>
+<p><strong>Best Practice</strong>: Use only one H1 per page (your title), and maintain proper heading hierarchy (don’t skip levels).</p>
+<hr/>
+<h3 id="text-formatting">Text Formatting</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8;font-weight:bold">**Bold text**</span><span style="color:#E1E4E8"> or </span><span style="color:#E1E4E8;font-weight:bold">__Bold text__</span></span>
+<span class="line"><span style="color:#E1E4E8;font-style:italic">*Italic text*</span><span style="color:#E1E4E8"> or </span><span style="color:#E1E4E8;font-style:italic">_Italic text_</span></span>
+<span class="line"><span style="color:#E1E4E8;font-weight:bold">**</span><span style="color:#E1E4E8;font-style:italic">*Bold and italic*</span><span style="color:#E1E4E8;font-weight:bold">**</span><span style="color:#E1E4E8"> or </span><span style="color:#E1E4E8;font-style:italic">___</span><span style="color:#E1E4E8">Bold and italic___</span></span>
+<span class="line"><span style="color:#E1E4E8;text-decoration:line-through">~~Strikethrough text~~</span></span>
+<span class="line"><span style="color:#79B8FF">`Inline code`</span></span></code></pre>
+<p><strong>Renders as</strong>:</p>
+<ul>
+<li><strong>Bold text</strong></li>
+<li><em>Italic text</em></li>
+<li><em><strong>Bold and italic</strong></em></li>
+<li><del>Strikethrough</del></li>
+<li><code>Inline code</code></li>
+</ul>
+<hr/>
+<h3 id="lists">Lists</h3>
+<p><strong>Unordered Lists</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Item 1</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Item 2</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Nested item 2.1</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> Nested item 2.2</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Item 3</span></span></code></pre>
+<p><strong>Ordered Lists</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#FFAB70">1.</span><span style="color:#E1E4E8"> First item</span></span>
+<span class="line"><span style="color:#FFAB70">2.</span><span style="color:#E1E4E8"> Second item</span></span>
+<span class="line"><span style="color:#FFAB70">3.</span><span style="color:#E1E4E8"> Third item</span></span>
+<span class="line"><span style="color:#FFAB70">   1.</span><span style="color:#E1E4E8"> Nested item</span></span>
+<span class="line"><span style="color:#FFAB70">   2.</span><span style="color:#E1E4E8"> Another nested item</span></span></code></pre>
+<p><strong>Task Lists</strong> (GitHub-style):</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> [</span><span style="color:#DBEDFF;text-decoration:underline">x</span><span style="color:#E1E4E8">] Completed task</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> [ ] Incomplete task</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> [ ] Another task</span></span></code></pre>
+<hr/>
+<h3 id="links">Links</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">Link text</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">https://example.com</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">Link with title</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">https://example.com</span><span> </span><span style="color:#9ECBFF;text-decoration:underline">&quot;</span><span style="color:#DBEDFF;text-decoration:underline">Hover text</span><span style="color:#9ECBFF;text-decoration:underline">&quot;</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">Reference-style link</span><span style="color:#E1E4E8">][</span><span style="color:#DBEDFF;text-decoration:underline">1</span><span style="color:#E1E4E8">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">1</span><span style="color:#E1E4E8">]: </span><span style="color:#E1E4E8;text-decoration:underline">https://example.com</span><span> </span><span style="color:#9ECBFF;text-decoration:underline">&quot;</span><span style="color:#DBEDFF;text-decoration:underline">Reference URL</span><span style="color:#9ECBFF;text-decoration:underline">&quot;</span></span></code></pre>
+<p><strong>Internal Links</strong> (within your site):</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">About Page</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">/about</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">Blog Post</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">/blog/my-post</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">Project</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">/projects/my-project</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<hr/>
+<h3 id="images">Images</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">![</span><span style="color:#DBEDFF;text-decoration:underline">Alt text</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">./image.png</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">![</span><span style="color:#DBEDFF;text-decoration:underline">Image with title</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">./image.png</span><span> </span><span style="color:#9ECBFF;text-decoration:underline">&quot;</span><span style="color:#DBEDFF;text-decoration:underline">Image title</span><span style="color:#9ECBFF;text-decoration:underline">&quot;</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<p><strong>Best Practices</strong>:</p>
+<ul>
+<li>Always include descriptive alt text for accessibility</li>
+<li>Use relative paths for local images (<code>./image.png</code>)</li>
+<li>Optimize images before adding (aim for &lt; 1MB)</li>
+<li>Use meaningful filenames</li>
+</ul>
+<p><strong>Example</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">![</span><span style="color:#DBEDFF;text-decoration:underline">A developer coding at a modern workspace with dual monitors</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">./workspace.jpg</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<hr/>
+<h3 id="code-blocks">Code Blocks</h3>
+<p><strong>Inline Code</strong>: Use single backticks</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">Use </span><span style="color:#79B8FF">`const`</span><span style="color:#E1E4E8"> for variables that won&#39;t change.</span></span></code></pre>
+<p><strong>Code Blocks</strong>: Use triple backticks with language specification</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">```javascript</span></span>
+<span class="line"><span style="color:#E1E4E8">function greet(name) {</span></span>
+<span class="line"><span style="color:#E1E4E8">  return `Hello, ${name}!`;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#E1E4E8">console.log(greet(&quot;World&quot;));</span></span>
+<span class="line"><span style="color:#E1E4E8">```</span></span></code></pre>
+<p><strong>Supported Languages</strong>:</p>
+<ul>
+<li><code>javascript</code> / <code>js</code></li>
+<li><code>typescript</code> / <code>ts</code></li>
+<li><code>python</code></li>
+<li><code>bash</code> / <code>sh</code></li>
+<li><code>css</code></li>
+<li><code>html</code></li>
+<li><code>json</code></li>
+<li><code>yaml</code></li>
+<li><code>markdown</code> / <code>md</code></li>
+<li>And many more!</li>
+</ul>
+<p><strong>Code Block with Title</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">```javascript title=&quot;greet.js&quot;</span></span>
+<span class="line"><span style="color:#E1E4E8">function greet(name) {</span></span>
+<span class="line"><span style="color:#E1E4E8">  return `Hello, ${name}!`;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#E1E4E8">```</span></span></code></pre>
+<hr/>
+<h3 id="blockquotes">Blockquotes</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#85E89D">&gt; This is a blockquote.</span></span>
+<span class="line"><span style="color:#85E89D">&gt; It can span multiple lines.</span></span>
+<span class="line"><span style="color:#85E89D">&gt;</span></span>
+<span class="line"><span style="color:#85E89D">&gt; And have multiple paragraphs.</span></span></code></pre>
+<p><strong>Renders as</strong>:</p>
+<blockquote>
+<p>This is a blockquote.
+It can span multiple lines.</p>
+</blockquote>
+<p><strong>Nested Blockquotes</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#85E89D">&gt; First level</span></span>
+<span class="line"><span style="color:#85E89D">&gt;&gt; Second level</span></span>
+<span class="line"><span style="color:#85E89D">&gt;&gt;&gt; Third level</span></span></code></pre>
+<hr/>
+<h3 id="horizontal-rules">Horizontal Rules</h3>
+<p>Create dividers using three or more hyphens, asterisks, or underscores:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">---</span></span>
+<span class="line"><span style="color:#F97583">*</span><span style="color:#E1E4E8">**</span></span>
+<span class="line"><span style="color:#9ECBFF">___</span></span></code></pre>
+<p>All render as a horizontal line.</p>
+<hr/>
+<h3 id="tables">Tables</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">| Header 1 | Header 2 | Header 3 |</span></span>
+<span class="line"><span style="color:#E1E4E8">|----------|----------|----------|</span></span>
+<span class="line"><span style="color:#E1E4E8">| Cell 1   | Cell 2   | Cell 3   |</span></span>
+<span class="line"><span style="color:#E1E4E8">| Cell 4   | Cell 5   | Cell 6   |</span></span></code></pre>
+<p><strong>Alignment</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">| Left aligned | Center aligned | Right aligned |</span></span>
+<span class="line"><span style="color:#E1E4E8">|:-------------|:--------------:|--------------:|</span></span>
+<span class="line"><span style="color:#E1E4E8">| Left         | Center         | Right         |</span></span></code></pre>
+<hr/>
+<h2 id="mdx-features">MDX Features</h2>
+<p>MDX allows you to import and use components within your markdown files. This is only available in <code>.mdx</code> files (not <code>.md</code>).</p>
+<h3 id="when-to-use-mdx-vs-md">When to Use MDX vs MD</h3>
+<p><strong>Use <code>.md</code> when</strong>:</p>
+<ul>
+<li>Writing simple blog posts</li>
+<li>No need for interactive components</li>
+<li>Standard markdown is sufficient</li>
+</ul>
+<p><strong>Use <code>.mdx</code> when</strong>:</p>
+<ul>
+<li>Embedding media (Spotify, YouTube, Twitter)</li>
+<li>Creating interactive content</li>
+<li>Using custom components</li>
+<li>Need advanced formatting</li>
+</ul>
+<h3 id="importing-components">Importing Components</h3>
+<p>At the top of your <code>.mdx</code> file, import the components you need:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="jsx"><code><span class="line"><span style="color:#F97583">---</span></span>
+<span class="line"><span style="color:#B392F0">title</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&quot;My Post&quot;</span></span>
+<span class="line"><span style="color:#B392F0">description</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&quot;Post description&quot;</span></span>
+<span class="line"><span style="color:#B392F0">publishDate</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&quot;2024-01-27&quot;</span></span>
+<span class="line"><span style="color:#F97583">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> Spotify </span><span style="color:#F97583">from</span><span style="color:#9ECBFF"> &#39;../../components/Spotify.astro&#39;</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> YouTube </span><span style="color:#F97583">from</span><span style="color:#9ECBFF"> &#39;../../components/YouTube.astro&#39;</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> Twitter </span><span style="color:#F97583">from</span><span style="color:#9ECBFF"> &#39;../../components/Twitter.astro&#39;</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8"># My Post Content</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Regular markdown content here</span><span style="color:#F97583">...</span></span></code></pre>
+<h3 id="available-media-components">Available Media Components</h3>
+<p>Bloomfolio includes three built-in media components for rich content:</p>
+<h4 id="spotify-component">Spotify Component</h4>
+<p>Embed Spotify tracks, albums, playlists, or podcasts:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="jsx"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#79B8FF">Spotify</span><span style="color:#B392F0"> url</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;https://open.spotify.com/track/...&quot;</span><span style="color:#E1E4E8"> /&gt;</span></span></code></pre>
+<h4 id="youtube-component">YouTube Component</h4>
+<p>Embed YouTube videos using either ID or full URL:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="jsx"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#79B8FF">YouTube</span><span style="color:#B392F0"> id</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;video-id&quot;</span><span style="color:#E1E4E8"> /&gt;</span></span>
+<span class="line"><span style="color:#F97583">&lt;!--</span><span style="color:#79B8FF"> OR</span><span style="color:#F97583"> --&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#79B8FF">YouTube</span><span style="color:#B392F0"> url</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;https://youtube.com/watch?v=...&quot;</span><span style="color:#E1E4E8"> /&gt;</span></span></code></pre>
+<h4 id="twitter-component">Twitter Component</h4>
+<p>Embed tweets using URL or ID:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="jsx"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#79B8FF">Twitter</span><span style="color:#B392F0"> url</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;https://x.com/user/status/...&quot;</span><span style="color:#E1E4E8"> /&gt;</span></span>
+<span class="line"><span style="color:#F97583">&lt;!--</span><span style="color:#79B8FF"> OR</span><span style="color:#F97583"> --&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#79B8FF">Twitter</span><span style="color:#B392F0"> id</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;tweet-id&quot;</span><span style="color:#B392F0"> username</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;username&quot;</span><span style="color:#E1E4E8"> /&gt;</span></span></code></pre>
+<h3 id="live-examples">Live Examples</h3>
+<p>Want to see these components in action? Check out the <strong><a href="/blog/embed-examples">Rich Media Embeds Example</a></strong> page which demonstrates all three media components with live examples.</p>
+<hr/>
+<h2 id="writing-best-practices">Writing Best Practices</h2>
+<h3 id="1-structure-your-content">1. Structure Your Content</h3>
+<p><strong>Good Structure</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># Main Title</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Introduction paragraph explaining what the post is about.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## First Section</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Content for the first section...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">### Subsection</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">More detailed information...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Second Section</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Content for the second section...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Conclusion</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Summary and next steps...</span></span></code></pre>
+<h3 id="2-use-meaningful-headings">2. Use Meaningful Headings</h3>
+<p><strong>Good</strong>:</p>
+<ul>
+<li><code>## Installation Steps</code></li>
+<li><code>## Common Errors and Solutions</code></li>
+<li><code>## Performance Optimization</code></li>
+</ul>
+<p><strong>Avoid</strong>:</p>
+<ul>
+<li><code>## Part 1</code></li>
+<li><code>## More Information</code></li>
+<li><code>## Details</code></li>
+</ul>
+<h3 id="3-break-up-long-paragraphs">3. Break Up Long Paragraphs</h3>
+<p>Keep paragraphs to 2-4 sentences for better readability:</p>
+<p><strong>Good</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">Markdown is easy to learn. It uses simple, intuitive syntax that mirrors</span></span>
+<span class="line"><span style="color:#E1E4E8">how people naturally format text in emails.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">The beauty of Markdown is its readability. Even in raw form, it&#39;s easy</span></span>
+<span class="line"><span style="color:#E1E4E8">to understand what the formatted output will look like.</span></span></code></pre>
+<p><strong>Avoid</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">Markdown is easy to learn and it uses simple, intuitive syntax that mirrors how people naturally format text in emails and the beauty of Markdown is its readability because even in raw form, it&#39;s easy to understand what the formatted output will look like and it makes writing documentation much faster.</span></span></code></pre>
+<h3 id="4-use-code-examples">4. Use Code Examples</h3>
+<p>When explaining technical concepts, include code examples:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">## Using Array Methods</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">The </span><span style="color:#79B8FF">`map()`</span><span style="color:#E1E4E8"> method creates a new array:</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">```javascript</span></span>
+<span class="line"><span style="color:#E1E4E8">const numbers = [1, 2, 3, 4, 5];</span></span>
+<span class="line"><span style="color:#E1E4E8">const doubled = numbers.map(n =&gt; n * 2);</span></span>
+<span class="line"><span style="color:#E1E4E8">console.log(doubled); // [2, 4, 6, 8, 10]</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="plaintext"><code><span class="line"><span></span></span>
+<span class="line"><span>### 5. Include Visual Breaks</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Use horizontal rules, blockquotes, or images to break up long sections of text:</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>```markdown</span></span>
+<span class="line"><span>## Long Topic</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>First part of the content...</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>---</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Second part of the content...</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&gt; Important note: This is a key point to remember.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Final part of the content...</span></span></code></pre>
+<h3 id="6-link-to-related-content">6. Link to Related Content</h3>
+<p>Help readers discover more:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">For more information on setting up your portfolio, check out the</span></span>
+<span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">Complete Guide</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">/blog/guides/bloomfolio-complete-guide</span><span style="color:#E1E4E8">).</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Learn how to structure your content in the</span></span>
+<span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">Content Collections Guide</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">/blog/guides/content-collections-guide</span><span style="color:#E1E4E8">).</span></span></code></pre>
+<hr/>
+<h2 id="seo-best-practices">SEO Best Practices</h2>
+<h3 id="write-good-meta-descriptions">Write Good Meta Descriptions</h3>
+<p>Your frontmatter description is used for SEO:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#B392F0">---</span></span>
+<span class="line"><span style="color:#85E89D">description</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&quot;Learn Markdown syntax and MDX features in Bloomfolio with this comprehensive guide.&quot;</span></span>
+<span class="line"><span style="color:#B392F0">---</span></span></code></pre>
+<p><strong>Tips</strong>:</p>
+<ul>
+<li>Keep under 160 characters</li>
+<li>Include primary keywords</li>
+<li>Make it compelling</li>
+<li>Describe what readers will learn</li>
+</ul>
+<h3 id="use-descriptive-alt-text">Use Descriptive Alt Text</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">![</span><span style="color:#DBEDFF;text-decoration:underline">A comparison chart showing Markdown syntax on the left and rendered HTML on the right</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">./markdown-vs-html.png</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<h3 id="structure-with-headings">Structure with Headings</h3>
+<p>Search engines use headings to understand content structure. Use them logically:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># Main Topic (H1 - only one per page)</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Major Section (H2)</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">### Subsection (H3)</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">#### Minor Point (H4)</span></span></code></pre>
+<h3 id="internal-linking">Internal Linking</h3>
+<p>Link to other pages on your site:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">Check out my [</span><span style="color:#DBEDFF;text-decoration:underline">E-commerce project</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">/projects/ecommerce-platform</span><span style="color:#E1E4E8">) for a</span></span>
+<span class="line"><span style="color:#E1E4E8">practical example.</span></span></code></pre>
+<hr/>
+<h2 id="accessibility-tips">Accessibility Tips</h2>
+<h3 id="1-meaningful-link-text">1. Meaningful Link Text</h3>
+<p><strong>Good</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">Learn more about [</span><span style="color:#DBEDFF;text-decoration:underline">Markdown syntax</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">https://example.com</span><span style="color:#E1E4E8">).</span></span></code></pre>
+<p><strong>Avoid</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">Learn more [</span><span style="color:#DBEDFF;text-decoration:underline">here</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">https://example.com</span><span style="color:#E1E4E8">).</span></span></code></pre>
+<h3 id="2-image-alt-text">2. Image Alt Text</h3>
+<p>Describe the image content, not just what it is:</p>
+<p><strong>Good</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">![</span><span style="color:#DBEDFF;text-decoration:underline">Bar chart showing 50% improvement in page load times after optimization</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">./performance-chart.png</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<p><strong>Avoid</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8">![</span><span style="color:#DBEDFF;text-decoration:underline">Chart</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">./performance-chart.png</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<h3 id="3-heading-hierarchy">3. Heading Hierarchy</h3>
+<p>Don’t skip heading levels:</p>
+<p><strong>Good</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># Title</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## Section</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">### Subsection</span></span></code></pre>
+<p><strong>Avoid</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># Title</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">### Subsection  &lt;!-- Skipped H2 --&gt;</span></span></code></pre>
+<hr/>
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<h3 id="1-inconsistent-spacing">1. Inconsistent Spacing</h3>
+<p>Markdown needs blank lines between elements:</p>
+<p><strong>Correct</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">## Heading</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">Paragraph text here.</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> List item 1</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> List item 2</span></span></code></pre>
+<p><strong>Incorrect</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">## Heading</span></span>
+<span class="line"><span style="color:#E1E4E8">Paragraph text here.</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> List item 1</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> List item 2</span></span></code></pre>
+<h3 id="2-not-escaping-special-characters">2. Not Escaping Special Characters</h3>
+<p>If you need to display special characters literally, escape them with <code>\</code>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF">\*</span><span style="color:#E1E4E8">This text has literal asterisks</span><span style="color:#79B8FF">\*</span></span>
+<span class="line"><span style="color:#79B8FF">\#</span><span style="color:#E1E4E8"> This is not a heading</span></span></code></pre>
+<h3 id="3-mixing-markdown-and-html-unnecessarily">3. Mixing Markdown and HTML Unnecessarily</h3>
+<p>While you can use HTML in Markdown, it’s better to use Markdown syntax when possible:</p>
+<p><strong>Prefer</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#E1E4E8;font-weight:bold">**Bold text**</span></span></code></pre>
+<p><strong>Over</strong>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">strong</span><span style="color:#E1E4E8">&gt;Bold text&lt;/</span><span style="color:#85E89D">strong</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<hr/>
+<h2 id="markdown-cheat-sheet">Markdown Cheat Sheet</h2>
+<p>Quick reference for common syntax:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># H1</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## H2</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">### H3</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;font-weight:bold">**bold**</span></span>
+<span class="line"><span style="color:#E1E4E8;font-style:italic">*italic*</span></span>
+<span class="line"><span style="color:#E1E4E8;text-decoration:line-through">~~strikethrough~~</span></span>
+<span class="line"><span style="color:#79B8FF">`code`</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Bullet list</span></span>
+<span class="line"><span style="color:#FFAB70">1.</span><span style="color:#E1E4E8"> Numbered list</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">[</span><span style="color:#DBEDFF;text-decoration:underline">Link</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">url</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">![</span><span style="color:#DBEDFF;text-decoration:underline">Image</span><span style="color:#E1E4E8">](</span><span style="color:#E1E4E8;text-decoration:underline">url</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#85E89D">&gt; Blockquote</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">```code block```</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">| Table | Header |</span></span>
+<span class="line"><span style="color:#E1E4E8">|-------|--------|</span></span>
+<span class="line"><span style="color:#E1E4E8">| Cell  | Cell   |</span></span></code></pre>
+<hr/>
+<h2 id="tools--resources">Tools &amp; Resources</h2>
+<h3 id="editors">Editors</h3>
+<ul>
+<li><strong>VS Code</strong>: Excellent Markdown support with preview</li>
+<li><strong>Typora</strong>: WYSIWYG Markdown editor</li>
+<li><strong>Obsidian</strong>: Note-taking with Markdown</li>
+<li><strong>MarkText</strong>: Free, open-source Markdown editor</li>
+</ul>
+<h3 id="vs-code-extensions">VS Code Extensions</h3>
+<ul>
+<li><strong>Markdown All in One</strong>: Shortcuts and preview</li>
+<li><strong>markdownlint</strong>: Linting and style checking</li>
+<li><strong>Markdown Preview Enhanced</strong>: Advanced preview features</li>
+</ul>
+<h3 id="online-tools">Online Tools</h3>
+<ul>
+<li><strong>StackEdit</strong>: Browser-based Markdown editor</li>
+<li><strong>Dillinger</strong>: Online Markdown editor with live preview</li>
+<li><strong>Markdown Guide</strong>: Comprehensive Markdown reference</li>
+</ul>
+<hr/>
+<h2 id="next-steps">Next Steps</h2>
+<p>Now that you understand Markdown and MDX:</p>
+<ol>
+<li><strong>Create Content</strong>: Start writing blog posts with your new skills</li>
+<li><strong>Experiment with MDX</strong>: Try the <a href="/blog/embed-examples">embed examples</a> in your own posts</li>
+<li><strong>Check Content Guide</strong>: Review the <a href="/blog/guides/content-collections-guide">Content Collections Guide</a> for schema details</li>
+<li><strong>Read Complete Guide</strong>: See the <a href="/blog/guides/bloomfolio-complete-guide">Bloomfolio Complete Guide</a> for full setup</li>
+</ol>
+<p>Happy writing! 🌼</p>  </div> <!-- Divider --> <div class="divider mt-12"></div> <!-- Back to blog link --> <div class="text-center mt-8"> <a href="/blog" class="btn btn-primary">
+View All Posts
+</a> </div> </article>   <!-- Smooth Scroll -->  </body> </html>
