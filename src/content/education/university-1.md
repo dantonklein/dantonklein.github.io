@@ -7,4 +7,4 @@ endDate: "2025-05-01"
 link: "https://www.ufl.edu/"
 ---
 
-Focused on FPGA Design, Computer Architecture, Hardware Security, and VLSI Design.
+Focused on FPGA Design, Computer Architecture, Hardware Security, and VLSI Design. Graduated with a 3.7 gpa.

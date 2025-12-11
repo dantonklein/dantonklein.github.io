@@ -7,4 +7,4 @@ endDate: "2024-05-01"
 link: "https://www.ufl.edu/"
 ---
 
-Focused on digital design and embedded software engineering. Graduated with honors.
+Focused on digital design and embedded software engineering. Graduated with honors with a 3.7 GPA.

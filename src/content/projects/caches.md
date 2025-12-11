@@ -9,7 +9,7 @@ sourceLink: "https://github.com/dantonklein/Cache-Designs"
 
 ## About This Project
 
-This repository will contain designs for direct-mapped, fully-associative, and n-way associative caches. I'm currently working on the direct-mapped cache.
+This repository will contain designs for direct-mapped, fully-associative, and n-way associative caches. I've completed the direct-mapped cache and now I am working on the fully-associative cache.
 
 ## Features
 
@@ -19,6 +19,6 @@ This repository will contain designs for direct-mapped, fully-associative, and n
 
 ### Interfacing with real ram
 - Cache is byte-addressable and supports byte, halfword, and word reads/writes
-- Supports burst reads from the cache with a line buffer to support atomic reading
+- Supports burst reads from the cache with a line buffer to support atomic memory changes
 
 
