@@ -1,8 +1,9 @@
 ---
 title: "8-Way Set-Associative Cache Design"
 description: "8-Way Set-Associative Cache Design in addition to a Fully-Associative and a Direct-Mapped Cache"
-image: "https://github.com/dantonklein/Cache-Designs/blob/master/pics/Cache%20Diagram.drawio.png"
+image: "https://raw.githubusercontent.com/dantonklein/Cache-Designs/refs/heads/master/pics/Cache%20Diagram.drawio.png"
 startDate: "2025-12-01"
+endDate: "2025-12-15"
 skills: ["SystemVerilog", "Vivado", "Computer Architecture", "QuestaSim"]
 sourceLink: "https://github.com/dantonklein/Cache-Designs"
 ---

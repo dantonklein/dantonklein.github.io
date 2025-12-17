@@ -3,6 +3,7 @@ title: "Floating-Point ALU for IEEE-754 Single-Precision Numbers"
 description: "SystemVerilog-based design and FPGA implementation of a full-featured pipelined floating-point ALU"
 image: "https://media.geeksforgeeks.org/wp-content/uploads/Single-Precision-IEEE-754-Floating-Point-Standard.jpg"
 startDate: "2025-09-01"
+endDate: "2025-11-30"
 skills: ["SystemVerilog", "RTL Design", "IEEE-754", "Constrained-Random Verification", "Static Timing Analysis"]
 sourceLink: "https://github.com/dantonklein/Floating-Point-ALU"
 ---
