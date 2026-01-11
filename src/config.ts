@@ -96,9 +96,9 @@ export interface SiteConfig {
  */
 export const siteConfig: SiteConfig = {
   name: "Danton Klein",
-  title: "Computer Engineer",
+  title: "Computer Engineer | Previously at Microsoft and Motorola Solutions",
   description:
-    "University of Florida ECE Graduate seeking a career as an RTL Design Engineer",
+    "University of Florida ECE Graduate seeking a career as an RTL Design Engineer. Contact me at dantonmklein@gmail.com.",
   avatar: "../assets/me.jpg",
   location: "🇺🇸 US",
   email: "dantonmklein@gmail.com",
